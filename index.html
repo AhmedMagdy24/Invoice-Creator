@@ -1,44 +1,63 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Password-Generator</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500;700;800&family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c2a0b436c2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/all.css">
     <script src="index.js" defer></script>
+    <title>Invoice Generator</title>
 </head>
 <body>
-    <div class="box">
-        <div class="container">
-        <div class="header">
-        <h2>Generate a <span class="text-accent">random password</span></h2>
-    </div>
-    <div class="header2">
-        <i class="fa-solid fa-bolt-auto"></i>
-        <p>Never use an insecure password again.</p>
-    </div>
-    
-    <div class="character-amount-container">
+    <!-- start Program button -->
+    <div class="start_btn"><button>Run Program</button></div>
 
-        <div id="button" class="btn1"onclick="genPassword();genPassword1();genPassword2();genPassword3();">Generate passwords
+    <div class="main_container">
+    <div id="top-container">
+        <div class="top-content">
+            <h1>Invoice Creator</h1>
+            <p>Thanks for choosing GoodCorp, LLC!</p>
+        </div>
+    </div>
+    <div id="bottom-container">
+        <div class="btm-content">
+            <div id="btn-container">
+                <button id="espresso">Espresso: $25</button>
+                <button id="caramel">Caramel Latte: $5</button>
+                <button id="tea">Tea: $5</button>
+                <button id="mocha">Cafe Mocha: $10</button>
+                <button id="vienna">Vienna: $15</button>
+                <button id="long-black">Long Black: $20</button>
+            </div>
+            <div id="column-container1">
+                <div class="col1">
+                    <p class="small-text">TASK</p>
+                    <p id="req-serv-names"></p>
+                </div>
+                <div class="col2">
+                    <p class="small-text">TOTAL</p>
+                    <p id="req-serv-price">_</p>
+                </div> 
+            </div>
+                <hr>
+            <div id="column-container2">  
+                <div class="col1">
+                    <p class="small-text">NOTES</p>
+                    <p class="small-text">We accept cash, credit card, or paypal</p>
+                </div>
+                <div class="col2">
+                    <p class="small-text">TOTAL AMOUNT</p>
+                    <p id="req-serv-total">_</p>
+                </div>
+               <!-- <div class="left-text" -->
+            </div>
+            <div class="footer-buttons">
+            <button class="send-btn">Reset</button>
+            <button class="exit-btn">Exit</button>
         </div>
 
-        <input type="range" min="1" max="30" value="10" id="characterAmountRange">
-        <input class="number-input" type="number" min="1" max="30" value="10" id="characterAmountNumber">
-
+        </div>
     </div>
-           
-    </div>
-        <hr />
-   <div class="boxes">
-        <input type="text" name="" placeholder="" id="password" readonly>
-        <input type="text" name="" placeholder="" id="password1" readonly>
-        <input type="text" name="" placeholder="" id="password2" readonly>
-        <input type="text" name="" placeholder="" id="password3" readonly>
-    </div>
-    </div> 
+</div>
 </body>
 </html>
